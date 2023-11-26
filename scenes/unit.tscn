@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bfk5vfqgyqqws" path="res://assets/tilemap.png" id="2_0bt68"]
 
 [node name="Unit" type="Node2D"]
-script = ExtResource("1_yy25e")
+script = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_0bt68")
