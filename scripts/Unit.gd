@@ -1,4 +1,4 @@
 class_name Unit
 extends Node2D
 
-@export var world: Node
+@export var game: Node

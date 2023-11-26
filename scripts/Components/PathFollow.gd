@@ -8,7 +8,6 @@ var follower: PathFollow2D
 var path: Path2D
 var path_finish: Signal
 
-
 func _notification(what):
 	if what == NOTIFICATION_PREDELETE:
 		follower.queue_free()
@@ -16,7 +15,7 @@ func _notification(what):
 func _ready():
 	get_parent().add_user_signal("path_finish")
 	path_finish = Signal(get_parent(), "path_finish")
-	path = get_parent().world.find_child("CreepPath", true)
+	path = get_parent().game.find_child("CreepPath", true)
 	follower = PathFollow2D.new()
 	follower.rotates = false
 	follower.loop = false

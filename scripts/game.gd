@@ -1,7 +1,8 @@
 extends Node2D
 
 @onready var creeps = $Creeps
-@onready var world = $"."
+@onready var game = $"."
+
 
 const CreepScene = preload("res://scenes/creep.tscn")
 
@@ -15,7 +16,7 @@ func _process(_delta):
 
 func _on_add_creep_pressed():
 	var creep: Creep = CreepScene.instantiate()
-	creep.world = world
+	creep.game = game
 	creeps.add_child(creep)
 	creep.connect("path_finish", _on_creep_path_finished.bind(creep))
 

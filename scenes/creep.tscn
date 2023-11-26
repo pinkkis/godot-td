@@ -15,4 +15,4 @@ region_rect = Rect2(136, 137, 16, 16)
 [node name="PathFollowComponent" type="Node" parent="." node_paths=PackedStringArray("actor")]
 script = ExtResource("3_uq66i")
 actor = NodePath("..")
-velocity = 50.0
+velocity = 15.0
