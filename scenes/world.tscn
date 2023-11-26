@@ -323,7 +323,3 @@ sprite_frames = SubResource("SpriteFrames_sg7c5")
 animation = &"blue_flag"
 autoplay = "blue_flag"
 frame_progress = 0.662048
-
-[node name="Unit" parent="." instance=ExtResource("3_800im")]
-position = Vector2(-24, 80)
-script = null
