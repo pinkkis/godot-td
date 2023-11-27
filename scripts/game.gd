@@ -3,8 +3,7 @@ extends Node2D
 @onready var creeps = $Creeps
 @onready var game = $"."
 
-
-const CreepScene = preload("res://scenes/creep.tscn")
+const CreepScene: PackedScene = preload("res://scenes/creep.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +14,8 @@ func _process(_delta):
 	pass
 
 func _on_add_creep_pressed():
-	var creep: Creep = CreepScene.instantiate()
+	var creep := CreepScene.instantiate() as Creep
+	creep.creep_type = preload("res://Resources/EnemyInfantry.tres")
 	creep.game = game
 	creeps.add_child(creep)
 	creep.connect("path_finish", _on_creep_path_finished.bind(creep))

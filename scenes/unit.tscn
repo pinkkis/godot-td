@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://mdsg55yd8hq6"]
+[gd_scene load_steps=3 format=3 uid="uid://clk0eqxgoj12w"]
 
 [ext_resource type="Script" path="res://scripts/creep.gd" id="1_1yd5y"]
-[ext_resource type="Texture2D" uid="uid://bfk5vfqgyqqws" path="res://assets/tilemap.png" id="2_0bt68"]
 [ext_resource type="Script" path="res://scripts/Components/Sprite.gd" id="2_mvleb"]
 
 [node name="Unit" type="Node2D"]
@@ -9,6 +8,3 @@ script = ExtResource("1_1yd5y")
 
 [node name="SpriteComponent" type="Node" parent="."]
 script = ExtResource("2_mvleb")
-Type = 12
-Team = 4
-SpriteSheet = ExtResource("2_0bt68")
